@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Patient Registration</h1>
+        <h2>Stay Alive </h2>
+        <form id="registrationForm" action="http://localhost/submit_form.php" method="POST">
+
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            </div>
+            <div>
+                <label for="contact">Contact Number</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+            </div>
+            <div>
+                <label for="date">Consultation Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="consultation_reason">Consultation Reason</label>
+                <select id="consultation_reason" name="consultation_reason" required>
+                    <option value="">Select reason for consultation</option>
+                    <option value="Check-up">General Check-up</option>
+                    <option value="Follow-up">Follow-up</option>
+                    <option value="Vaccine">Vaccine</option>
+                    <option value="Others">Other</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
